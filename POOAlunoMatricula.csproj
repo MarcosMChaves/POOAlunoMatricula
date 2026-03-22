@@ -8,8 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Reference Include="POOFoundation">
-      <HintPath>..\POOFoundation\bin\Debug\net10.0\POOFoundation.dll</HintPath>
+    <Reference Include="OOPFoundation">
+      <HintPath>..\OOPFoundation\bin\Debug\net10.0\OOPFoundation.dll</HintPath>
     </Reference>
   </ItemGroup>
 

@@ -1,5 +1,5 @@
 ﻿
-using POOFoundation;
+using OOPFoundation;
 
 namespace POOAlunoMatricula
 {

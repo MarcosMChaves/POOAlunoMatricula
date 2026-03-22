@@ -1,5 +1,5 @@
 ﻿
-using POOFoundation;
+using OOPFoundation;
 using System.Text.RegularExpressions;
 
 namespace POOAlunoMatricula
