@@ -1,9 +1,10 @@
 ﻿
+using POOFoundation;
 using System.Text.RegularExpressions;
 
 namespace POOAlunoMatricula
 {
-    public class Matricula
+    public class Matricula: ISanitization, ITextValidation
     {
         private readonly string Numero;
         private readonly string PatternValido;
@@ -26,15 +27,15 @@ namespace POOAlunoMatricula
             MaximoCaracteres = maximoCaracteres;
             PatternValido = patternValido.Trim();
 
-            string numeroSanitizado = Sanitizar(textoParaSanitizar: numero);
-            if (!ValidarTexto(textoParaValidar: numeroSanitizado))
+            string numeroSanitizado = Sanitize(textoParaSanitizar: numero);
+            if (!TextIsValid(textoParaValidar: numeroSanitizado))
             {
                 throw new ArgumentException($"Argumento 'numero'='{numero}' inválido!");
             }
 
             Numero = numeroSanitizado.ToUpper();
         }
-        public string Sanitizar(string textoParaSanitizar)
+        public string Sanitize(string textoParaSanitizar)
         {
             string textoSanitizado = System.String.Empty;
             try
@@ -49,7 +50,7 @@ namespace POOAlunoMatricula
             return textoSanitizado;
         }
 
-        public bool ValidarTexto(string textoParaValidar)
+        public bool TextIsValid(string textoParaValidar)
         {
             if (String.IsNullOrEmpty(textoParaValidar) ||
                 String.IsNullOrWhiteSpace(textoParaValidar) ||

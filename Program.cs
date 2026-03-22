@@ -1,10 +1,10 @@
-﻿using FlexAPessoa;
+﻿using POOFoundation;
 using POOAlunoMatricula;
 
 try
 {
-    Texto nome = new Texto(texto: "Gabriela", patternValido: "\\p{L}\\s.");
-    Texto sobrenome = new Texto(texto: "Xavier", patternValido: "\\p{L}\\s.");
+    Text nome = new Text(text: "Gabriela", validPattern: "\\p{L}\\s.");
+    Text sobrenome = new Text(text: "Xavier", validPattern: "\\p{L}\\s.");
     Matricula matricula = new Matricula(numero: "H1234567",
                                     patternValido: "A-Z0-9",
                                     minimoCaracteres: 8,

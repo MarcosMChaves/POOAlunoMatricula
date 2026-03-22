@@ -8,8 +8,8 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Reference Include="FlexAPessoa">
-      <HintPath>..\FlexAPessoa\bin\Debug\net10.0\FlexAPessoa.dll</HintPath>
+    <Reference Include="POOFoundation">
+      <HintPath>..\POOFoundation\bin\Debug\net10.0\POOFoundation.dll</HintPath>
     </Reference>
   </ItemGroup>
 
